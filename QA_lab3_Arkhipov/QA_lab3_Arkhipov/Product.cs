@@ -10,6 +10,7 @@ namespace QA_lab3_Arkhipov
     /// <summary>
     /// Вспомогательный класс Product содержит информацию о продукте в диете.
     /// </summary>
+    /// \callergraph
     class Product
     {
         private int kalorii; //Калории
@@ -21,7 +22,6 @@ namespace QA_lab3_Arkhipov
         /// <param name="k">Калории продукта</param>
         /// <param name="c">Ценность продукта</param>
         /// <param name="Kol">Количество хлебных единиц</param>
-        /// \callergraph
         public void Init(int k, double c, int Kol)//Инициализция данных продукта
         {
             kalorii = k;//Калории
@@ -55,7 +55,8 @@ namespace QA_lab3_Arkhipov
         /// <summary>
         /// Добавление удвоенного числа хлебных единиц в знаменатель
         /// </summary>
-        /// <returns></returns>
+        /// <returns> Подсчёт ценности продукта по формуле:
+        /// $$Cost = cost / (kalorii + 2 * kolhleb)$$</returns>
         public double Cost()
         {
             return Math.Round(cost / (kalorii + 2 * kolhleb), 2, MidpointRounding.AwayFromZero);
