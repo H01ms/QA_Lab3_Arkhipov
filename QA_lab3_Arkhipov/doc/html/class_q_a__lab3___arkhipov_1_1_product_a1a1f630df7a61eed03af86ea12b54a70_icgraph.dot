@@ -1,0 +1,11 @@
+digraph "QA_lab3_Arkhipov.Product.Cost"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="QA_lab3_Arkhipov.Product.Cost",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Добавление удвоенного числа хлебных единиц в знаменатель"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="QA_lab3_Arkhipov.Dieta.Cost",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_q_a__lab3___arkhipov_1_1_dieta.html#a83ab67208802fc9a3b12c68914045901",tooltip="Метод подсчитывающий общую ценность продуктов"];
+}

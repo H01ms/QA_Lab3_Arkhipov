@@ -1,0 +1,11 @@
+digraph "QA_lab3_Arkhipov.Dieta.Init"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="QA_lab3_Arkhipov.Dieta.Init",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод инициализации данных диеты с двумя продуктами"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="QA_lab3_Arkhipov.Product.Init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_q_a__lab3___arkhipov_1_1_product.html#abc027262e3f783e070a914804f570c07",tooltip="Метод инициализации данных продукта"];
+}
